@@ -1,0 +1,66 @@
+.page-logo{
+    height: 200px;
+    align-self: center;
+}
+
+.learning-new{
+    width: 50%;
+    height: 50%;
+    clip-path: circle(42.5% at 50% 50%);
+}
+
+.tanay-ama{
+    width: 50%;
+    height: 50%;
+    clip-path: circle(42.5% at 50% 50%);
+}
+.tedx{
+    width: 50%;
+    height: 50%;
+    clip-path: circle(42.5% at 50% 50%);
+}
+.lofi{
+    width: 50%;
+    height: 50%;
+    clip-path: circle(42.5% at 50% 50%);
+}
+.meditation{
+    width: 50%;
+    height: 50%;
+    clip-path: circle(42.5% at 50% 50%);
+}
+.laugh{
+    width: 50%;
+    height: 50%;
+    clip-path: circle(42.5% at 50% 50%);
+}
+
+
+/* .site-header{
+    background-color: #1b7cbc;
+    color: #ecfdf9;
+    height:100vh;
+    font-family: monospace;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  
+
+
+}
+.site-header-content{
+    margin: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height:200px;
+    width: 200px;
+    align-self: center;
+    box-shadow: #oa8269 2px 5px 5px;
+}
+
+body{
+    margin: 0;
+} */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleMe.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id = "usernameInput">
+            <!-- form added to set reset button -->
+            <!-- username field -->
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        
+        </div>
+        <br>
+        <div>
+            <!-- password field -->
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <br>
+        <div>
+            <!-- signin button -->
+            <button id="signInBtn" type="submit">Sign in</button>
+        </div>
+        <br>
+        <div>
+            <!-- reset fields -->
+            <label for="reset"></label>
+            <input type="reset" value="Reset" name="reset" onclick="clearCred()">
+        </div>
+    </form>
+    <script>
+        // making data fields
+        var userDetails = [
+            {
+                username: "Nipun",
+                password: "qwe"
+            },
+            {
+                username: "Daksh",
+                password: "asd"
+            }
+
+        ]
+        document.getElementById("signInBtn").onclick = getinfo;
+        //checking if the data gets displayed
+        //console.log(userdetails[0].user)
+        let showAlert=true;
+        function getinfo() {
+            var username = document.getElementById("username").value
+            var password = document.getElementById("password").value
+
+            //looping to check the userdetails
+            
+            for(i=0; i < userDetails.length; i++){
+                if(username == userDetails[i].username && password == userDetails[i].password)
+                {
+                    console.log("congratulations " + username + "!! you are logged in")
+                    window.location.href="videoPage.html";
+                    window.localStorage.setItem("username", document.getElementById("username").value)
+                }
+                if(username!==userDetails[i].user || password!==userDetails.password && showAlert===true){
+                    alert("Wrong username or password. Please enter details again.");
+                    showAlert=false;
+                }
+            }
+        }
+
+        // clearCred function is for clearing the credentials entered by the user by pressing the reset button.
+        function clearCred() {
+            document.getElementById("usernameInput").reset();
+        }
+
+
+
+    </script>
+</body>
+</html>
